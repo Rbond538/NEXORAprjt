@@ -1,0 +1,60 @@
+﻿<Page
+    x:Class="NEXORA_NgonziCollin.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:NEXORA_NgonziCollin"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+
+        <Border Grid.Row="0"
+                Background="Black"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Center"
+                Height="1008"
+                Width="745">
+            <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+                <StackPanel Orientation="Horizontal" Margin="40">
+                    <Button Content="N" FontWeight="bold" Foreground="White" 
+                             FontSize="35" BorderThickness="0" Background="#f0b43c" 
+                             CornerRadius="10" HorizontalAlignment="Center" Padding="20 10"/>
+                    <TextBlock Text="NEXORA" Foreground="White" FontSize="35" FontWeight="bold"
+                               Margin="20 5 0 0"/>
+                </StackPanel>
+            </StackPanel>
+        </Border>
+        <StackPanel Height="998" Width="740" Margin="750,10,0,0" Grid.Row="0">
+            <StackPanel Height="513" Margin="120 250 120 0">
+                <TextBlock Text="Welcome back" FontSize="25" FontWeight="Bold"
+                            />
+                <TextBlock Text="Sign into your account" Margin="0 10 0 30"
+                            FontSize="15"/>
+                <TextBox x:Name="txtUserName" Header="Username" PlaceholderText="Enter username"
+                         Height="70" Padding="10 12 0 0" Margin="0 0 0 20"/>
+                <PasswordBox x:Name="txtPassword" Header="Password" PlaceholderText="Enter password"
+                             Height="70" Padding="10 12 0 0" Margin="0 0 0 20"/>
+                <CheckBox x:Name="checkbox" Content="Remember me"/>
+                <Button Content="SIGN IN" Background="#f0b43c"
+                        Foreground="White"
+                        FontWeight="Bold"
+                        CornerRadius="5"
+                        Padding="10" Click="Button_Click_1" Margin="0 20 0 20"/>
+                <TextBlock Text="OR" HorizontalAlignment="Center" Foreground="LightBlue"/>
+                <Button Content="CREATE ACCUNT" Background="white"
+                        Foreground="Black"
+                        FontWeight="Bold"
+                        BorderBrush="Black"
+                        BorderThickness=".5"
+                        CornerRadius="5"
+                        Padding="10" Click="Button_Click" Margin="0 20 0 20"/>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Page>
